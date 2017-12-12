@@ -72,7 +72,7 @@ public class UserLogin extends AppCompatActivity implements View.OnClickListener
             return;
         }
         //if they are not empty, show progress dialog
-        progressDialog.setMessage("Registering please wait...");
+        progressDialog.setMessage("Logging In please wait...");
         progressDialog.show();
 
         firebaseAuth.signInWithEmailAndPassword(email,password);
